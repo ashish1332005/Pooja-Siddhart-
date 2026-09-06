@@ -92,7 +92,7 @@ export default function App() {
             {/* SECTION 3: THE VENUE */}
             <section 
               id="venue-section" 
-              className="relative w-full min-h-screen min-h-[100dvh] flex flex-col items-center justify-center py-6 sm:py-10 px-4 border-b border-[#d4af37]/30 overflow-hidden bg-no-repeat bg-center"
+              className="relative w-full min-h-screen min-h-[100dvh] flex flex-col items-center justify-center py-6 px-4 border-b border-[#d4af37]/30 overflow-hidden bg-no-repeat bg-center"
               style={{
                 backgroundImage: `url('/assets/padam/reception-bg-Bhu2sMue.webp')`,
                 backgroundSize: '100% 100%'
@@ -100,7 +100,7 @@ export default function App() {
             >
               <div className="absolute inset-0 bg-[#f6eee2]/10 pointer-events-none" />
 
-              <div className="relative z-10 w-full max-w-xl mx-auto flex flex-col items-center justify-center flex-1">
+              <div className="relative z-10 w-full max-w-xl mx-auto flex flex-col items-center justify-center">
                 <VenueSection />
               </div>
             </section>
