@@ -43,20 +43,20 @@ export default function RoyalGate({ onGateOpened }) {
   });
 
   return (
-    <div className="relative w-full min-h-screen flex flex-col items-center justify-center py-3 px-4 overflow-hidden gap-1.5 sm:gap-3">
+    <div className="relative w-full min-h-screen flex flex-col items-center justify-center pt-0 pb-3 px-4 overflow-hidden gap-1.5 sm:gap-3">
       
       {/* Top Header Section (Fades out when gate starts opening) */}
       <div 
-        className={`flex flex-col items-center text-center z-10 max-w-lg w-full transition-opacity duration-500 ${
+        className={`flex flex-col items-center text-center z-10 max-w-lg w-full pt-0 transition-opacity duration-500 ${
           isOpening ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       >
         {/* Hanging Floral Leaf Vine & PS Monogram Medallion */}
         <div className="flex flex-col items-center animate-hanging-chain mb-1">
-          {/* Floral Leaf Vine String (LONGER & ATTACHED TO TOP) */}
-          <div className="w-10 h-24 sm:h-32 -mt-3 sm:-mt-4 flex items-center justify-center pointer-events-none">
-            <svg viewBox="0 0 30 120" fill="none" className="w-full h-full filter drop-shadow-xs">
-              <path d="M15,0 Q12,30 15,60 Q18,90 15,120" stroke="#4a6b48" strokeWidth="2.4" fill="none" />
+          {/* Floral Leaf Vine String (FLUSH CONNECTED TO TOP EDGE - ZERO GAP) */}
+          <div className="w-10 h-20 sm:h-28 flex items-center justify-center pointer-events-none">
+            <svg viewBox="0 0 30 120" fill="none" className="w-full h-full filter drop-shadow-xs" preserveAspectRatio="none">
+              <path d="M15,0 Q12,30 15,60 Q18,90 15,120" stroke="#4a6b48" strokeWidth="2.8" fill="none" strokeLinecap="square" />
               <path d="M15,8 Q5,3 8,13 Q12,12 15,8" fill="#6b8e68" stroke="#375235" strokeWidth="0.8" />
               <path d="M15,18 Q25,13 22,23 Q18,22 15,18" fill="#587955" stroke="#375235" strokeWidth="0.8" />
               <path d="M15,38 Q5,33 7,43 Q12,42 15,38" fill="#4a6b48" stroke="#375235" strokeWidth="0.8" />
