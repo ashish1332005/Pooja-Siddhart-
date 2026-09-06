@@ -4,7 +4,7 @@ import { MapPin } from 'lucide-react';
 
 export default function VenueSection() {
   return (
-    <div className="w-full flex flex-col items-center justify-center py-2 px-4 max-w-xl mx-auto">
+    <div className="w-full flex flex-col items-center justify-start pt-0 pb-6 px-4 max-w-xl mx-auto">
       
       {/* Header Graphic (7.png: "The Venue") */}
       <motion.div 
@@ -12,7 +12,7 @@ export default function VenueSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="max-w-[220px] sm:max-w-[280px] mb-3"
+        className="max-w-[220px] sm:max-w-[280px] mb-3 -mt-2 sm:-mt-4"
       >
         <img 
           src="/assets/padam/7.png" 
