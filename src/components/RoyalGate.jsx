@@ -54,7 +54,7 @@ export default function RoyalGate({ onGateOpened }) {
         {/* Hanging Floral Leaf Vine & PS Monogram Medallion */}
         <div className="flex flex-col items-center animate-hanging-chain mt-0 pt-0">
           {/* Delicate Antique Gold Leaf Vine String */}
-          <div className="w-5 sm:w-6 h-10 sm:h-14 flex items-center justify-center pointer-events-none mt-0 pt-0">
+          <div className="w-5 sm:w-6 h-8 sm:h-12 flex items-center justify-center pointer-events-none mt-0 pt-0">
             <svg viewBox="0 0 24 120" fill="none" className="w-full h-full filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.35)]" preserveAspectRatio="none">
               <defs>
                 <linearGradient id="vineGoldStem" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -93,8 +93,8 @@ export default function RoyalGate({ onGateOpened }) {
             </svg>
           </div>
 
-          {/* Organic Royal PS Logo Medallion */}
-          <div className="w-32 h-32 sm:w-40 sm:h-40 -mt-2 hover:scale-105 transition-transform cursor-pointer flex items-center justify-center">
+          {/* Organic Royal PS Logo Medallion (Enlarged size) */}
+          <div className="w-44 h-44 sm:w-52 sm:h-52 -mt-2 hover:scale-105 transition-transform cursor-pointer flex items-center justify-center">
             <img 
               src="/assets/padam/1.png" 
               alt="PS Monogram Medallion" 
@@ -113,16 +113,16 @@ export default function RoyalGate({ onGateOpened }) {
         <img 
           src="/assets/padam/3.png" 
           alt="Wardrobe Guide" 
-          className="w-full max-w-[275px] sm:max-w-[340px] h-auto object-contain filter drop-shadow-xs"
+          className="w-full max-w-[285px] sm:max-w-[350px] h-auto object-contain filter drop-shadow-xs"
         />
         <p className="font-serif-royal text-sm sm:text-base font-semibold text-[#5c131a] italic tracking-wide mt-1.5">
           Let's help you pack for the wedding
         </p>
       </div>
 
-      {/* 3. BOTTOM GATE CONTAINER (Balanced height & positioning) */}
+      {/* 3. BOTTOM GATE CONTAINER (Taller height & balanced width) */}
       <div 
-        className={`relative z-20 w-full max-w-[275px] sm:max-w-[325px] aspect-[4/5] mx-auto mb-2 transition-transform duration-[1100ms] cubic-bezier(0.4, 0, 0.2, 1) ${
+        className={`relative z-20 w-full max-w-[305px] sm:max-w-[365px] aspect-[4/5.3] mx-auto mb-1 transition-transform duration-[1100ms] cubic-bezier(0.4, 0, 0.2, 1) ${
           isOpening ? 'scale-[3.8] sm:scale-[4.5] translate-y-[5%]' : 'scale-100 translate-y-0'
         }`}
         style={{
