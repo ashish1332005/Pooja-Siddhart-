@@ -66,30 +66,30 @@ export default function RoyalGate({ onGateOpened }) {
             </svg>
           </div>
 
-          {/* Prominent Highlighted PS Logo Medallion */}
-          <div className="relative w-32 h-32 sm:w-40 sm:h-40 -mt-1 hover:scale-105 transition-transform cursor-pointer group flex items-center justify-center">
-            {/* Glowing Golden Backlight Ring */}
-            <div className="absolute inset-2 rounded-full bg-gradient-to-r from-[#ffd700]/30 via-[#d4af37]/40 to-[#ffd700]/30 blur-md group-hover:blur-lg transition-all" />
+          {/* Prominent Royal PS Logo Medallion with High Contrast Backplate */}
+          <div className="relative w-36 h-36 sm:w-44 sm:h-44 -mt-1 hover:scale-105 transition-transform cursor-pointer flex items-center justify-center">
+            {/* Crisp Royal Gold Rimmed Ivory Medallion Frame */}
+            <div className="absolute inset-1.5 rounded-full bg-gradient-to-b from-[#fffdf8] via-[#fff8eb] to-[#f5e7c8] border-2 border-[#d4af37] shadow-[0_8px_20px_rgba(92,19,26,0.22)]" />
             
             <img 
               src="/assets/padam/1.png" 
               alt="PS Monogram Medallion" 
-              className="relative z-10 w-full h-full object-contain filter drop-shadow-[0_8px_16px_rgba(110,30,36,0.35)]"
+              className="relative z-10 w-full h-full object-contain p-1 filter contrast-[1.15] brightness-[1.02] drop-shadow-xs"
             />
           </div>
         </div>
 
         {/* Clear & Prominent Royal Header Typography */}
-        <h1 className="font-serif-royal text-lg sm:text-xl font-bold tracking-[0.25em] uppercase text-[#6e1e24] block mb-1 drop-shadow-sm">
+        <h1 className="font-serif-royal text-lg sm:text-xl font-bold tracking-[0.24em] uppercase text-[#5c131a] block mt-1 mb-1.5 drop-shadow-xs">
           A JOURNEY TO FOREVER
         </h1>
         
-        <div className="inline-flex items-center justify-center gap-2 bg-[#fffbf4]/80 border border-[#d4af37]/60 rounded-full px-3.5 py-0.5 shadow-xs">
-          <span className="text-[9px] text-[#b8860b]">✦</span>
-          <p className="font-serif-royal text-xs sm:text-sm font-bold text-[#5c131a] tracking-widest uppercase">
+        <div className="inline-flex items-center justify-center gap-2 bg-[#fffdf9] border border-[#d4af37] rounded-full px-4 py-1 shadow-sm">
+          <span className="text-[10px] text-[#b8860b]">★</span>
+          <p className="font-serif-royal text-xs sm:text-sm font-bold text-[#5c131a] tracking-[0.18em] uppercase">
             4–5 DECEMBER 2026 • UDAIPUR
           </p>
-          <span className="text-[9px] text-[#b8860b]">✦</span>
+          <span className="text-[10px] text-[#b8860b]">★</span>
         </div>
       </div>
 
