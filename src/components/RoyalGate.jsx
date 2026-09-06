@@ -53,24 +53,26 @@ export default function RoyalGate({ onGateOpened }) {
       >
         {/* Hanging Floral Leaf Vine & PS Monogram Medallion */}
         <div className="flex flex-col items-center animate-hanging-chain mb-1">
-          {/* Floral Leaf Vine String (LONGER VINE) */}
-          <div className="w-8 h-16 sm:h-22 flex items-center justify-center">
-            <svg viewBox="0 0 30 100" fill="none" className="w-full h-full filter drop-shadow-xs">
-              <path d="M15,0 Q12,25 15,50 Q18,75 15,100" stroke="#4a6b48" strokeWidth="2.2" fill="none" />
-              <path d="M15,12 Q5,7 8,17 Q12,16 15,12" fill="#6b8e68" stroke="#375235" strokeWidth="0.8" />
-              <path d="M15,20 Q25,15 22,25 Q18,24 15,20" fill="#587955" stroke="#375235" strokeWidth="0.8" />
+          {/* Floral Leaf Vine String (LONGER & ATTACHED TO TOP) */}
+          <div className="w-10 h-24 sm:h-32 -mt-3 sm:-mt-4 flex items-center justify-center pointer-events-none">
+            <svg viewBox="0 0 30 120" fill="none" className="w-full h-full filter drop-shadow-xs">
+              <path d="M15,0 Q12,30 15,60 Q18,90 15,120" stroke="#4a6b48" strokeWidth="2.4" fill="none" />
+              <path d="M15,8 Q5,3 8,13 Q12,12 15,8" fill="#6b8e68" stroke="#375235" strokeWidth="0.8" />
+              <path d="M15,18 Q25,13 22,23 Q18,22 15,18" fill="#587955" stroke="#375235" strokeWidth="0.8" />
               <path d="M15,38 Q5,33 7,43 Q12,42 15,38" fill="#4a6b48" stroke="#375235" strokeWidth="0.8" />
-              <path d="M15,46 Q25,41 23,51 Q18,50 15,46" fill="#6b8e68" stroke="#375235" strokeWidth="0.8" />
-              <path d="M15,64 Q5,59 8,69 Q12,68 15,64" fill="#587955" stroke="#375235" strokeWidth="0.8" />
-              <path d="M15,72 Q25,67 22,77 Q18,76 15,72" fill="#4a6b48" stroke="#375235" strokeWidth="0.8" />
+              <path d="M15,48 Q25,43 23,53 Q18,52 15,48" fill="#6b8e68" stroke="#375235" strokeWidth="0.8" />
+              <path d="M15,68 Q5,63 8,73 Q12,72 15,68" fill="#587955" stroke="#375235" strokeWidth="0.8" />
+              <path d="M15,78 Q25,73 22,83 Q18,82 15,78" fill="#4a6b48" stroke="#375235" strokeWidth="0.8" />
+              <path d="M15,98 Q5,93 7,103 Q12,102 15,98" fill="#6b8e68" stroke="#375235" strokeWidth="0.8" />
+              <path d="M15,108 Q25,103 23,113 Q18,112 15,108" fill="#587955" stroke="#375235" strokeWidth="0.8" />
               <circle cx="15" cy="28" r="2.2" fill="#d95d39" />
-              <circle cx="15" cy="56" r="2.5" fill="#f4a261" />
-              <circle cx="15" cy="82" r="2.2" fill="#d95d39" />
+              <circle cx="15" cy="58" r="2.5" fill="#f4a261" />
+              <circle cx="15" cy="88" r="2.2" fill="#d95d39" />
             </svg>
           </div>
 
-          {/* Organic Royal PS Logo Medallion (Seamlessly Blended with Background) */}
-          <div className="w-32 h-32 sm:w-40 sm:h-40 -mt-1 hover:scale-105 transition-transform cursor-pointer flex items-center justify-center">
+          {/* Organic Royal PS Logo Medallion */}
+          <div className="w-32 h-32 sm:w-40 sm:h-40 -mt-2 hover:scale-105 transition-transform cursor-pointer flex items-center justify-center">
             <img 
               src="/assets/padam/1.png" 
               alt="PS Monogram Medallion" 

@@ -40,13 +40,13 @@ export default function AnnouncementSection() {
   return (
     <div className="w-full flex flex-col items-center justify-center py-4 sm:py-6 px-3 max-w-lg mx-auto my-auto">
       
-      {/* PS Monogram Medallion Logo (Seamlessly Blended with Background) */}
+      {/* PS Monogram Medallion Logo (Enlarged for High Prominence) */}
       <motion.div 
         initial={{ opacity: 0, y: -20, scale: 0.9 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="w-28 h-28 sm:w-36 sm:h-36 mb-2 hover:scale-105 transition-transform flex items-center justify-center cursor-pointer"
+        className="w-36 h-36 sm:w-48 sm:h-48 mb-3 hover:scale-105 transition-transform flex items-center justify-center cursor-pointer"
       >
         <img 
           src="/assets/padam/1.png" 
