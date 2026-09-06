@@ -44,7 +44,7 @@ export default function App() {
           >
             <div className="absolute inset-0 bg-[#f6eee2]/10 pointer-events-none" />
 
-            <div className="relative z-10 w-full h-full flex flex-col items-center justify-between pt-0 pb-2 sm:pb-4">
+            <div className="relative z-10 w-full h-full min-h-screen flex flex-col items-center justify-center pt-0 pb-2 sm:pb-4">
               <RoyalGate onGateOpened={handleGateOpened} />
             </div>
           </motion.section>
