@@ -4,15 +4,15 @@ import { MapPin } from 'lucide-react';
 
 export default function VenueSection() {
   return (
-    <div className="w-full flex flex-col items-center justify-start pt-0 pb-6 px-4 max-w-xl mx-auto">
+    <div className="w-full h-full min-h-[calc(100vh-3.5rem)] flex flex-col items-center justify-between py-2 px-4 max-w-xl mx-auto">
       
-      {/* Header Graphic (7.png: "The Venue") - Positioned High Up */}
+      {/* 1. Header Graphic (7.png: "The Venue") - Anchored at Top */}
       <motion.div 
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="max-w-[250px] sm:max-w-[310px] -mt-6 sm:-mt-10 mb-8 sm:mb-12"
+        className="max-w-[240px] sm:max-w-[290px] pt-1 sm:pt-3 mb-2"
       >
         <img 
           src="/assets/padam/7.png" 
@@ -21,13 +21,13 @@ export default function VenueSection() {
         />
       </motion.div>
 
-      {/* Resort Photo Card (9.png in Gold Bordered Rounded Frame) - Positioned with Clear Gap */}
+      {/* 2. Resort Photo Card (9.png in Gold Bordered Rounded Frame) - Positioned in Upper-Middle */}
       <motion.div 
         initial={{ opacity: 0, scale: 0.9, y: 40 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.9, delay: 0.2, ease: "easeOut" }}
-        className="w-full max-w-[340px] sm:max-w-[420px] rounded-3xl p-1 bg-gradient-to-b from-[#d4af37] via-[#fff0b3] to-[#aa7c11] shadow-[0_12px_35px_rgba(0,0,0,0.15)] mb-5 transition-transform hover:scale-[1.01]"
+        className="w-full max-w-[340px] sm:max-w-[420px] rounded-3xl p-1 bg-gradient-to-b from-[#d4af37] via-[#fff0b3] to-[#aa7c11] shadow-[0_12px_35px_rgba(0,0,0,0.15)] my-2 transition-transform hover:scale-[1.01]"
       >
         <div className="w-full aspect-[16/10] rounded-[22px] overflow-hidden bg-[#2a060a]">
           <img 
@@ -38,13 +38,13 @@ export default function VenueSection() {
         </div>
       </motion.div>
 
-      {/* Venue Name & Location Text */}
+      {/* 3. Venue Name & Location Text */}
       <motion.div 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-        className="text-center mb-6"
+        className="text-center my-2"
       >
         <h2 className="font-serif-royal text-2xl sm:text-3xl font-semibold text-[#5c131a] tracking-wide mb-1">
           Ramee Royal Resort &amp; Spa
@@ -54,13 +54,13 @@ export default function VenueSection() {
         </span>
       </motion.div>
 
-      {/* Action Button: Google Maps Directions */}
+      {/* 4. Action Button: Google Maps Directions - Anchored near Bottom */}
       <motion.div 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-        className="w-full max-w-xs sm:max-w-sm mb-2"
+        className="w-full max-w-xs sm:max-w-sm pb-4 sm:pb-6 mt-2"
       >
         <a 
           href="https://maps.google.com/?q=Ramee+Royal+Resort+and+Spa+Udaipur" 
