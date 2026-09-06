@@ -36,7 +36,7 @@ export default function App() {
             exit={{ opacity: 0, scale: 1.04 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
             id="hero-section" 
-            className="fixed inset-0 z-50 w-full h-screen flex flex-col items-center justify-center overflow-hidden bg-no-repeat bg-center"
+            className="fixed inset-0 z-50 w-full h-screen flex flex-col items-center justify-between overflow-hidden bg-no-repeat bg-center"
             style={{
               backgroundImage: `url('/assets/padam/hero-bg-BoJZa16A.webp')`,
               backgroundSize: '100% 100%'
@@ -44,7 +44,7 @@ export default function App() {
           >
             <div className="absolute inset-0 bg-[#f6eee2]/10 pointer-events-none" />
 
-            <div className="relative z-10 w-full min-h-screen flex flex-col items-center justify-center">
+            <div className="relative z-10 w-full h-full flex flex-col items-center justify-between pt-0 pb-2 sm:pb-4">
               <RoyalGate onGateOpened={handleGateOpened} />
             </div>
           </motion.section>

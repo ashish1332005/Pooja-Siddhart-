@@ -43,36 +43,58 @@ export default function RoyalGate({ onGateOpened }) {
   });
 
   return (
-    <div className="relative w-full min-h-screen flex flex-col items-center justify-center pt-0 pb-3 px-4 overflow-hidden gap-1.5 sm:gap-3">
+    <div className="relative w-full h-full flex flex-col items-center justify-between pt-0 pb-2 px-4 overflow-hidden gap-1 sm:gap-2">
       
-      {/* Top Header Section (Fades out when gate starts opening) */}
+      {/* Top Header Section (Flush connected to top-0 - ZERO gap on mobile & desktop) */}
       <div 
-        className={`flex flex-col items-center text-center z-10 max-w-lg w-full pt-0 transition-opacity duration-500 ${
+        className={`flex flex-col items-center text-center z-10 max-w-lg w-full pt-0 mt-0 transition-opacity duration-500 ${
           isOpening ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       >
         {/* Hanging Floral Leaf Vine & PS Monogram Medallion */}
-        <div className="flex flex-col items-center animate-hanging-chain mb-1">
-          {/* Floral Leaf Vine String (FLUSH CONNECTED TO TOP EDGE - ZERO GAP) */}
-          <div className="w-10 h-20 sm:h-28 flex items-center justify-center pointer-events-none">
-            <svg viewBox="0 0 30 120" fill="none" className="w-full h-full filter drop-shadow-xs" preserveAspectRatio="none">
-              <path d="M15,0 Q12,30 15,60 Q18,90 15,120" stroke="#4a6b48" strokeWidth="2.8" fill="none" strokeLinecap="square" />
-              <path d="M15,8 Q5,3 8,13 Q12,12 15,8" fill="#6b8e68" stroke="#375235" strokeWidth="0.8" />
-              <path d="M15,18 Q25,13 22,23 Q18,22 15,18" fill="#587955" stroke="#375235" strokeWidth="0.8" />
-              <path d="M15,38 Q5,33 7,43 Q12,42 15,38" fill="#4a6b48" stroke="#375235" strokeWidth="0.8" />
-              <path d="M15,48 Q25,43 23,53 Q18,52 15,48" fill="#6b8e68" stroke="#375235" strokeWidth="0.8" />
-              <path d="M15,68 Q5,63 8,73 Q12,72 15,68" fill="#587955" stroke="#375235" strokeWidth="0.8" />
-              <path d="M15,78 Q25,73 22,83 Q18,82 15,78" fill="#4a6b48" stroke="#375235" strokeWidth="0.8" />
-              <path d="M15,98 Q5,93 7,103 Q12,102 15,98" fill="#6b8e68" stroke="#375235" strokeWidth="0.8" />
-              <path d="M15,108 Q25,103 23,113 Q18,112 15,108" fill="#587955" stroke="#375235" strokeWidth="0.8" />
-              <circle cx="15" cy="28" r="2.2" fill="#d95d39" />
-              <circle cx="15" cy="58" r="2.5" fill="#f4a261" />
-              <circle cx="15" cy="88" r="2.2" fill="#d95d39" />
+        <div className="flex flex-col items-center animate-hanging-chain mt-0 pt-0 mb-0.5">
+          {/* Delicate Antique Gold Leaf Vine String (FLUSH CONNECTED TO TOP EDGE - ZERO GAP) */}
+          <div className="w-5 sm:w-6 h-18 sm:h-24 flex items-center justify-center pointer-events-none mt-0 pt-0">
+            <svg viewBox="0 0 24 120" fill="none" className="w-full h-full filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.35)]" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="vineGoldStem" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#FFF0B3" />
+                  <stop offset="45%" stopColor="#D4AF37" />
+                  <stop offset="100%" stopColor="#997312" />
+                </linearGradient>
+
+                <linearGradient id="leafGoldFill" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#bfa15f" stopOpacity="0.85" />
+                  <stop offset="100%" stopColor="#785e25" stopOpacity="0.8" />
+                </linearGradient>
+              </defs>
+
+              {/* Main Stem - Slim, delicate & curved starting flush at y=0 */}
+              <path d="M12,0 Q9,30 12,60 Q15,90 12,120" stroke="url(#vineGoldStem)" strokeWidth="1.3" fill="none" strokeLinecap="round" />
+
+              {/* Delicate Royal Slender Leaves */}
+              <path d="M12,8 Q4,4 6,12 Q10,11 12,8" fill="url(#leafGoldFill)" stroke="#544116" strokeWidth="0.5" />
+              <path d="M12,16 Q20,12 18,20 Q14,19 12,16" fill="url(#leafGoldFill)" stroke="#544116" strokeWidth="0.5" />
+
+              <path d="M12,34 Q4,30 5,38 Q10,37 12,34" fill="url(#leafGoldFill)" stroke="#544116" strokeWidth="0.5" />
+              <path d="M12,42 Q20,38 19,46 Q14,45 12,42" fill="url(#leafGoldFill)" stroke="#544116" strokeWidth="0.5" />
+
+              <path d="M12,62 Q4,58 6,66 Q10,65 12,62" fill="url(#leafGoldFill)" stroke="#544116" strokeWidth="0.5" />
+              <path d="M12,70 Q20,66 18,74 Q14,73 12,70" fill="url(#leafGoldFill)" stroke="#544116" strokeWidth="0.5" />
+
+              <path d="M12,90 Q4,86 5,94 Q10,93 12,90" fill="url(#leafGoldFill)" stroke="#544116" strokeWidth="0.5" />
+              <path d="M12,98 Q20,94 19,102 Q14,101 12,98" fill="url(#leafGoldFill)" stroke="#544116" strokeWidth="0.5" />
+
+              {/* Subtle Micro Royal Gold Pearls */}
+              <circle cx="12" cy="24" r="1.3" fill="#FFF0B3" stroke="#D4AF37" strokeWidth="0.4" />
+              <circle cx="12" cy="52" r="1.4" fill="#FFF0B3" stroke="#D4AF37" strokeWidth="0.4" />
+              <circle cx="12" cy="80" r="1.3" fill="#FFF0B3" stroke="#D4AF37" strokeWidth="0.4" />
+              <circle cx="12" cy="110" r="1.5" fill="#FFF0B3" stroke="#D4AF37" strokeWidth="0.4" />
             </svg>
           </div>
 
           {/* Organic Royal PS Logo Medallion */}
-          <div className="w-32 h-32 sm:w-40 sm:h-40 -mt-2 hover:scale-105 transition-transform cursor-pointer flex items-center justify-center">
+          <div className="w-28 h-28 sm:w-36 sm:h-36 -mt-2 hover:scale-105 transition-transform cursor-pointer flex items-center justify-center">
             <img 
               src="/assets/padam/1.png" 
               alt="PS Monogram Medallion" 
