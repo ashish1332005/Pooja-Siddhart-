@@ -6,13 +6,13 @@ export default function VenueSection() {
   return (
     <div className="w-full flex flex-col items-center justify-center max-w-xl mx-auto pt-0 pb-2 px-3 sm:px-4">
 
-      {/* 1. Header Graphic (7.png: "The Venue") - Moved higher up with clear bottom space */}
+      {/* 1. Header Graphic (7.png: "The Venue") - Positioned higher up with expanded space below */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="w-full max-w-[260px] sm:max-w-[320px] -mt-1 sm:-mt-3 mb-6 sm:mb-8"
+        className="w-full max-w-[260px] sm:max-w-[320px] -mt-3 sm:-mt-6 mb-8 sm:mb-12"
       >
         <img
           src="/assets/padam/7.png"

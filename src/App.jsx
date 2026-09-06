@@ -92,7 +92,7 @@ export default function App() {
             {/* SECTION 3: THE VENUE */}
             <section 
               id="venue-section" 
-              className="relative w-full min-h-screen min-h-[100dvh] flex flex-col items-center justify-center pt-3 sm:pt-5 pb-6 px-4 border-b border-[#d4af37]/30 overflow-hidden bg-no-repeat bg-center"
+              className="relative w-full min-h-screen min-h-[100dvh] flex flex-col items-center justify-center pt-1 sm:pt-3 pb-6 px-4 border-b border-[#d4af37]/30 overflow-hidden bg-no-repeat bg-center"
               style={{
                 backgroundImage: `url('/assets/padam/reception-bg-Bhu2sMue.webp')`,
                 backgroundSize: '100% 100%'
