@@ -53,21 +53,24 @@ export default function RoyalGate({ onGateOpened }) {
       >
         {/* Hanging Floral Leaf Vine & PS Monogram Medallion */}
         <div className="flex flex-col items-center animate-hanging-chain mb-1">
-          {/* Floral Leaf Vine String */}
-          <div className="w-8 h-8 sm:h-12 flex items-center justify-center">
-            <svg viewBox="0 0 30 60" fill="none" className="w-full h-full filter drop-shadow-xs">
-              <path d="M15,0 Q12,20 15,40 Q18,50 15,60" stroke="#4a6b48" strokeWidth="2" fill="none" />
-              <path d="M15,10 Q5,5 8,15 Q12,14 15,10" fill="#6b8e68" stroke="#375235" strokeWidth="0.8" />
-              <path d="M15,15 Q25,10 22,20 Q18,19 15,15" fill="#587955" stroke="#375235" strokeWidth="0.8" />
-              <path d="M15,30 Q5,25 7,35 Q12,34 15,30" fill="#4a6b48" stroke="#375235" strokeWidth="0.8" />
-              <path d="M15,35 Q25,30 23,40 Q18,39 15,35" fill="#6b8e68" stroke="#375235" strokeWidth="0.8" />
-              <circle cx="15" cy="22" r="2" fill="#d95d39" />
-              <circle cx="15" cy="45" r="2.5" fill="#f4a261" />
+          {/* Floral Leaf Vine String (LONGER VINE) */}
+          <div className="w-8 h-16 sm:h-22 flex items-center justify-center">
+            <svg viewBox="0 0 30 100" fill="none" className="w-full h-full filter drop-shadow-xs">
+              <path d="M15,0 Q12,25 15,50 Q18,75 15,100" stroke="#4a6b48" strokeWidth="2.2" fill="none" />
+              <path d="M15,12 Q5,7 8,17 Q12,16 15,12" fill="#6b8e68" stroke="#375235" strokeWidth="0.8" />
+              <path d="M15,20 Q25,15 22,25 Q18,24 15,20" fill="#587955" stroke="#375235" strokeWidth="0.8" />
+              <path d="M15,38 Q5,33 7,43 Q12,42 15,38" fill="#4a6b48" stroke="#375235" strokeWidth="0.8" />
+              <path d="M15,46 Q25,41 23,51 Q18,50 15,46" fill="#6b8e68" stroke="#375235" strokeWidth="0.8" />
+              <path d="M15,64 Q5,59 8,69 Q12,68 15,64" fill="#587955" stroke="#375235" strokeWidth="0.8" />
+              <path d="M15,72 Q25,67 22,77 Q18,76 15,72" fill="#4a6b48" stroke="#375235" strokeWidth="0.8" />
+              <circle cx="15" cy="28" r="2.2" fill="#d95d39" />
+              <circle cx="15" cy="56" r="2.5" fill="#f4a261" />
+              <circle cx="15" cy="82" r="2.2" fill="#d95d39" />
             </svg>
           </div>
 
-          {/* Prominent Royal PS Logo Medallion with High Contrast Backplate */}
-          <div className="relative w-36 h-36 sm:w-44 sm:h-44 -mt-1 hover:scale-105 transition-transform cursor-pointer flex items-center justify-center">
+          {/* Prominent Royal PS Logo Medallion */}
+          <div className="relative w-32 h-32 sm:w-40 sm:h-40 -mt-1 hover:scale-105 transition-transform cursor-pointer flex items-center justify-center">
             {/* Crisp Royal Gold Rimmed Ivory Medallion Frame */}
             <div className="absolute inset-1.5 rounded-full bg-gradient-to-b from-[#fffdf8] via-[#fff8eb] to-[#f5e7c8] border-2 border-[#d4af37] shadow-[0_8px_20px_rgba(92,19,26,0.22)]" />
             
@@ -79,17 +82,16 @@ export default function RoyalGate({ onGateOpened }) {
           </div>
         </div>
 
-        {/* Clear & Prominent Royal Header Typography */}
-        <h1 className="font-serif-royal text-lg sm:text-xl font-bold tracking-[0.24em] uppercase text-[#5c131a] block mt-1 mb-1.5 drop-shadow-xs">
-          A JOURNEY TO FOREVER
-        </h1>
-        
-        <div className="inline-flex items-center justify-center gap-2 bg-[#fffdf9] border border-[#d4af37] rounded-full px-4 py-1 shadow-sm">
-          <span className="text-[10px] text-[#b8860b]">★</span>
-          <p className="font-serif-royal text-xs sm:text-sm font-bold text-[#5c131a] tracking-[0.18em] uppercase">
-            4–5 DECEMBER 2026 • UDAIPUR
+        {/* Wardrobe Guide Typography Image (3.png) & Subtitle */}
+        <div className="flex flex-col items-center justify-center my-1 px-2">
+          <img 
+            src="/assets/padam/3.png" 
+            alt="Wardrobe Guide" 
+            className="w-full max-w-[220px] sm:max-w-[280px] h-auto object-contain filter drop-shadow-xs"
+          />
+          <p className="font-serif-royal text-xs sm:text-sm font-semibold text-[#5c131a] italic tracking-wide mt-0.5">
+            Let's help you pack for the wedding
           </p>
-          <span className="text-[10px] text-[#b8860b]">★</span>
         </div>
       </div>
 
