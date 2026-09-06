@@ -45,7 +45,7 @@ export default function RoyalGate({ onGateOpened }) {
   return (
     <div className="relative w-full h-full flex flex-col items-center justify-between pt-0 pb-2 px-3 overflow-hidden">
       
-      {/* 1. TOP LOGO SECTION (Flush connected to top-0 - ZERO gap above vine) */}
+      {/* 1. TOP LOGO SECTION */}
       <div 
         className={`flex flex-col items-center text-center z-10 w-full pt-0 mt-0 transition-opacity duration-500 ${
           isOpening ? 'opacity-0 pointer-events-none' : 'opacity-100'
@@ -53,8 +53,8 @@ export default function RoyalGate({ onGateOpened }) {
       >
         {/* Hanging Floral Leaf Vine & PS Monogram Medallion */}
         <div className="flex flex-col items-center animate-hanging-chain mt-0 pt-0">
-          {/* Delicate Antique Gold Leaf Vine String (FLUSH CONNECTED TO TOP EDGE - ZERO GAP) */}
-          <div className="w-5 sm:w-6 h-14 sm:h-18 flex items-center justify-center pointer-events-none mt-0 pt-0">
+          {/* Delicate Antique Gold Leaf Vine String */}
+          <div className="w-5 sm:w-6 h-10 sm:h-14 flex items-center justify-center pointer-events-none mt-0 pt-0">
             <svg viewBox="0 0 24 120" fill="none" className="w-full h-full filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.35)]" preserveAspectRatio="none">
               <defs>
                 <linearGradient id="vineGoldStem" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -93,8 +93,8 @@ export default function RoyalGate({ onGateOpened }) {
             </svg>
           </div>
 
-          {/* Organic Royal PS Logo Medallion (Enlarged size) */}
-          <div className="w-30 h-30 sm:w-38 sm:h-38 -mt-2 hover:scale-105 transition-transform cursor-pointer flex items-center justify-center">
+          {/* Organic Royal PS Logo Medallion */}
+          <div className="w-32 h-32 sm:w-40 sm:h-40 -mt-2 hover:scale-105 transition-transform cursor-pointer flex items-center justify-center">
             <img 
               src="/assets/padam/1.png" 
               alt="PS Monogram Medallion" 
@@ -104,25 +104,25 @@ export default function RoyalGate({ onGateOpened }) {
         </div>
       </div>
 
-      {/* 2. CENTER TEXT SECTION (Positioned right in the middle between Logo and Gate, with EQUAL gap above and below) */}
+      {/* 2. CENTER TEXT SECTION (Optimized scale & spacing for perfect visual harmony) */}
       <div 
-        className={`flex flex-col items-center justify-center my-auto py-2 px-2 z-10 text-center transition-opacity duration-500 ${
+        className={`flex flex-col items-center justify-center my-auto py-1 px-2 z-10 text-center transition-opacity duration-500 ${
           isOpening ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       >
         <img 
           src="/assets/padam/3.png" 
           alt="Wardrobe Guide" 
-          className="w-full max-w-[225px] sm:max-w-[285px] h-auto object-contain filter drop-shadow-xs"
+          className="w-full max-w-[275px] sm:max-w-[340px] h-auto object-contain filter drop-shadow-xs"
         />
-        <p className="font-serif-royal text-xs sm:text-sm font-semibold text-[#5c131a] italic tracking-wide mt-1">
+        <p className="font-serif-royal text-sm sm:text-base font-semibold text-[#5c131a] italic tracking-wide mt-1.5">
           Let's help you pack for the wedding
         </p>
       </div>
 
-      {/* 3. BOTTOM GATE CONTAINER (Positioned near bottom of screen) */}
+      {/* 3. BOTTOM GATE CONTAINER (Balanced height & positioning) */}
       <div 
-        className={`relative z-20 w-full max-w-[265px] sm:max-w-[315px] aspect-[4/5] mx-auto mb-1 transition-transform duration-[1100ms] cubic-bezier(0.4, 0, 0.2, 1) ${
+        className={`relative z-20 w-full max-w-[275px] sm:max-w-[325px] aspect-[4/5] mx-auto mb-2 transition-transform duration-[1100ms] cubic-bezier(0.4, 0, 0.2, 1) ${
           isOpening ? 'scale-[3.8] sm:scale-[4.5] translate-y-[5%]' : 'scale-100 translate-y-0'
         }`}
         style={{
