@@ -69,15 +69,12 @@ export default function RoyalGate({ onGateOpened }) {
             </svg>
           </div>
 
-          {/* Prominent Royal PS Logo Medallion */}
-          <div className="relative w-32 h-32 sm:w-40 sm:h-40 -mt-1 hover:scale-105 transition-transform cursor-pointer flex items-center justify-center">
-            {/* Crisp Royal Gold Rimmed Ivory Medallion Frame */}
-            <div className="absolute inset-1.5 rounded-full bg-gradient-to-b from-[#fffdf8] via-[#fff8eb] to-[#f5e7c8] border-2 border-[#d4af37] shadow-[0_8px_20px_rgba(92,19,26,0.22)]" />
-            
+          {/* Organic Royal PS Logo Medallion (Seamlessly Blended with Background) */}
+          <div className="w-32 h-32 sm:w-40 sm:h-40 -mt-1 hover:scale-105 transition-transform cursor-pointer flex items-center justify-center">
             <img 
               src="/assets/padam/1.png" 
               alt="PS Monogram Medallion" 
-              className="relative z-10 w-full h-full object-contain p-1 filter contrast-[1.15] brightness-[1.02] drop-shadow-xs"
+              className="w-full h-full object-contain filter drop-shadow-[0_6px_16px_rgba(92,19,26,0.18)]"
             />
           </div>
         </div>
