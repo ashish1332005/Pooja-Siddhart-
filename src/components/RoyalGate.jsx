@@ -206,9 +206,9 @@ export default function RoyalGate({ onGateOpened }) {
           {!isOpening && (
             <button
               onClick={handleOpenGate}
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 group px-6 py-4 bg-[#fffcf7] border-2 border-[#d4af37] shadow-[0_10px_25px_rgba(0,0,0,0.4)] rounded-md transition-transform duration-300 hover:scale-105 active:scale-95 cursor-pointer flex flex-col items-center"
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 group px-5 py-2 sm:px-6 sm:py-2.5 bg-[#fffcf7] border-2 border-[#d4af37] shadow-[0_10px_25px_rgba(0,0,0,0.4)] rounded-md transition-transform duration-300 hover:scale-105 active:scale-95 cursor-pointer flex items-center justify-center whitespace-nowrap"
             >
-              <span className="font-serif-royal text-2xl font-semibold text-[#5c131a] tracking-wide">
+              <span className="font-serif-royal text-xl sm:text-2xl font-semibold text-[#5c131a] tracking-wide leading-none whitespace-nowrap">
                 Open me
               </span>
             </button>
