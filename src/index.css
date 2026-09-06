@@ -213,5 +213,25 @@ body {
   animation: flapWingRight 0.35s ease-in-out infinite;
 }
 
+/* Flower Surprise Burst Animation */
+@keyframes flowerSurpriseBurst {
+  0% {
+    transform: translate(0, 0) scale(0.2) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translate(var(--tx, 0px), var(--ty, -60px)) scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: translate(calc(var(--tx, 0px) * 1.6), calc(var(--ty, 60px) + 300px)) scale(0.6) rotate(600deg);
+    opacity: 0;
+  }
+}
+
+.animate-flower-surprise {
+  animation: flowerSurpriseBurst 3.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
 
 
