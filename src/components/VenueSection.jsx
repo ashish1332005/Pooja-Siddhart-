@@ -4,7 +4,7 @@ import { MapPin } from 'lucide-react';
 
 export default function VenueSection() {
   return (
-    <div className="w-full flex flex-col items-center justify-center py-2 px-4 max-w-xl mx-auto">
+    <div className="w-full flex flex-col items-center justify-center py-0 px-4 max-w-xl mx-auto">
       
       {/* Header Graphic (7.png: "The Venue") */}
       <motion.div 
@@ -12,7 +12,7 @@ export default function VenueSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="max-w-[240px] sm:max-w-[300px] mb-5"
+        className="max-w-[220px] sm:max-w-[280px] mb-3"
       >
         <img 
           src="/assets/padam/7.png" 
@@ -27,7 +27,7 @@ export default function VenueSection() {
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.9, delay: 0.2, ease: "easeOut" }}
-        className="w-full max-w-[340px] sm:max-w-[420px] rounded-3xl p-1 bg-gradient-to-b from-[#d4af37] via-[#fff0b3] to-[#aa7c11] shadow-[0_12px_35px_rgba(0,0,0,0.15)] mb-5 transition-transform hover:scale-[1.01]"
+        className="w-full max-w-[340px] sm:max-w-[420px] rounded-3xl p-1 bg-gradient-to-b from-[#d4af37] via-[#fff0b3] to-[#aa7c11] shadow-[0_12px_35px_rgba(0,0,0,0.15)] mb-3 sm:mb-4 transition-transform hover:scale-[1.01]"
       >
         <div className="w-full aspect-[16/10] rounded-[22px] overflow-hidden bg-[#2a060a]">
           <img 
@@ -44,7 +44,7 @@ export default function VenueSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-        className="text-center mb-5"
+        className="text-center mb-4"
       >
         <h2 className="font-serif-royal text-2xl sm:text-3xl font-semibold text-[#5c131a] tracking-wide mb-1">
           Ramee Royal Resort &amp; Spa
