@@ -40,12 +40,30 @@ export default function AnnouncementSection() {
   return (
     <div className="w-full flex flex-col items-center justify-center py-4 sm:py-6 px-3 max-w-lg mx-auto my-auto">
       
-      {/* Announcement Typography Graphic (88.png) */}
+      {/* PS Monogram Medallion Logo (Added in green circle area at top) */}
       <motion.div 
-        initial={{ opacity: 0, y: -30, scale: 0.95 }}
+        initial={{ opacity: 0, y: -20, scale: 0.9 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
+        className="relative w-28 h-28 sm:w-36 sm:h-36 mb-2 hover:scale-105 transition-transform flex items-center justify-center cursor-pointer"
+      >
+        {/* Crisp Royal Gold Rimmed Ivory Medallion Frame */}
+        <div className="absolute inset-1 rounded-full bg-gradient-to-b from-[#fffdf8] via-[#fff8eb] to-[#f5e7c8] border-2 border-[#d4af37] shadow-[0_6px_18px_rgba(92,19,26,0.2)]" />
+        
+        <img 
+          src="/assets/padam/1.png" 
+          alt="PS Monogram Medallion" 
+          className="relative z-10 w-full h-full object-contain p-1 filter contrast-[1.15] brightness-[1.02] drop-shadow-xs"
+        />
+      </motion.div>
+
+      {/* Announcement Typography Graphic (88.png) */}
+      <motion.div 
+        initial={{ opacity: 0, y: -20, scale: 0.95 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
         className="w-full max-w-[280px] sm:max-w-[360px] mb-3"
       >
         <img 
