@@ -43,18 +43,18 @@ export default function RoyalGate({ onGateOpened }) {
   });
 
   return (
-    <div className="relative w-full h-full flex flex-col items-center justify-center pt-0 pb-2 px-3 overflow-hidden gap-1 sm:gap-2">
+    <div className="relative w-full h-full flex flex-col items-center justify-between pt-0 pb-2 px-3 overflow-hidden">
       
-      {/* Top Header Section (Flush connected to top-0 with Logo -> Center Text -> Gate hierarchy) */}
+      {/* 1. TOP LOGO SECTION (Flush connected to top-0 - ZERO gap above vine) */}
       <div 
-        className={`flex flex-col items-center text-center z-10 max-w-lg w-full pt-0 mt-0 transition-opacity duration-500 ${
+        className={`flex flex-col items-center text-center z-10 w-full pt-0 mt-0 transition-opacity duration-500 ${
           isOpening ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       >
-        {/* 1. TOP LOGO: Hanging Floral Leaf Vine & PS Monogram Medallion */}
-        <div className="flex flex-col items-center animate-hanging-chain mt-0 pt-0 mb-0.5">
+        {/* Hanging Floral Leaf Vine & PS Monogram Medallion */}
+        <div className="flex flex-col items-center animate-hanging-chain mt-0 pt-0">
           {/* Delicate Antique Gold Leaf Vine String (FLUSH CONNECTED TO TOP EDGE - ZERO GAP) */}
-          <div className="w-5 sm:w-6 h-14 sm:h-20 flex items-center justify-center pointer-events-none mt-0 pt-0">
+          <div className="w-5 sm:w-6 h-14 sm:h-18 flex items-center justify-center pointer-events-none mt-0 pt-0">
             <svg viewBox="0 0 24 120" fill="none" className="w-full h-full filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.35)]" preserveAspectRatio="none">
               <defs>
                 <linearGradient id="vineGoldStem" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -93,8 +93,8 @@ export default function RoyalGate({ onGateOpened }) {
             </svg>
           </div>
 
-          {/* Organic Royal PS Logo Medallion */}
-          <div className="w-24 h-24 sm:w-32 sm:h-32 -mt-2 hover:scale-105 transition-transform cursor-pointer flex items-center justify-center">
+          {/* Organic Royal PS Logo Medallion (Enlarged size) */}
+          <div className="w-30 h-30 sm:w-38 sm:h-38 -mt-2 hover:scale-105 transition-transform cursor-pointer flex items-center justify-center">
             <img 
               src="/assets/padam/1.png" 
               alt="PS Monogram Medallion" 
@@ -102,23 +102,27 @@ export default function RoyalGate({ onGateOpened }) {
             />
           </div>
         </div>
-
-        {/* 2. CENTER TEXT: Typography Image (3.png) & Subtitle (Positioned right in the middle between Logo and Gate) */}
-        <div className="flex flex-col items-center justify-center my-1 sm:my-2 px-2">
-          <img 
-            src="/assets/padam/3.png" 
-            alt="Wardrobe Guide" 
-            className="w-full max-w-[190px] sm:max-w-[250px] h-auto object-contain filter drop-shadow-xs"
-          />
-          <p className="font-serif-royal text-xs sm:text-sm font-semibold text-[#5c131a] italic tracking-wide mt-0.5">
-            Let's help you pack for the wedding
-          </p>
-        </div>
       </div>
 
-      {/* 3. BOTTOM GATE: Realistic 3D Arch Wooden Gate Container */}
+      {/* 2. CENTER TEXT SECTION (Positioned right in the middle between Logo and Gate, with EQUAL gap above and below) */}
       <div 
-        className={`relative z-20 w-full max-w-[260px] sm:max-w-[310px] aspect-[4/5] mx-auto mt-0 sm:mt-1 transition-transform duration-[1100ms] cubic-bezier(0.4, 0, 0.2, 1) ${
+        className={`flex flex-col items-center justify-center my-auto py-2 px-2 z-10 text-center transition-opacity duration-500 ${
+          isOpening ? 'opacity-0 pointer-events-none' : 'opacity-100'
+        }`}
+      >
+        <img 
+          src="/assets/padam/3.png" 
+          alt="Wardrobe Guide" 
+          className="w-full max-w-[225px] sm:max-w-[285px] h-auto object-contain filter drop-shadow-xs"
+        />
+        <p className="font-serif-royal text-xs sm:text-sm font-semibold text-[#5c131a] italic tracking-wide mt-1">
+          Let's help you pack for the wedding
+        </p>
+      </div>
+
+      {/* 3. BOTTOM GATE CONTAINER (Positioned near bottom of screen) */}
+      <div 
+        className={`relative z-20 w-full max-w-[265px] sm:max-w-[315px] aspect-[4/5] mx-auto mb-1 transition-transform duration-[1100ms] cubic-bezier(0.4, 0, 0.2, 1) ${
           isOpening ? 'scale-[3.8] sm:scale-[4.5] translate-y-[5%]' : 'scale-100 translate-y-0'
         }`}
         style={{
