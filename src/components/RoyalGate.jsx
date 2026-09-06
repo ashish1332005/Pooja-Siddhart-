@@ -43,19 +43,19 @@ export default function RoyalGate({ onGateOpened }) {
   });
 
   return (
-    <div className="relative w-full min-h-screen flex flex-col items-center justify-between py-4 px-4 overflow-hidden">
+    <div className="relative w-full min-h-screen flex flex-col items-center justify-center py-3 px-4 overflow-hidden gap-1.5 sm:gap-3">
       
       {/* Top Header Section (Fades out when gate starts opening) */}
       <div 
-        className={`flex flex-col items-center text-center z-10 max-w-lg w-full pt-1 transition-opacity duration-500 ${
+        className={`flex flex-col items-center text-center z-10 max-w-lg w-full transition-opacity duration-500 ${
           isOpening ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       >
         {/* Hanging Floral Leaf Vine & PS Monogram Medallion */}
-        <div className="flex flex-col items-center animate-hanging-chain mb-2">
+        <div className="flex flex-col items-center animate-hanging-chain mb-1">
           {/* Floral Leaf Vine String */}
-          <div className="w-8 h-10 sm:h-14 flex items-center justify-center">
-            <svg viewBox="0 0 30 60" fill="none" className="w-full h-full">
+          <div className="w-8 h-8 sm:h-12 flex items-center justify-center">
+            <svg viewBox="0 0 30 60" fill="none" className="w-full h-full filter drop-shadow-xs">
               <path d="M15,0 Q12,20 15,40 Q18,50 15,60" stroke="#4a6b48" strokeWidth="2" fill="none" />
               <path d="M15,10 Q5,5 8,15 Q12,14 15,10" fill="#6b8e68" stroke="#375235" strokeWidth="0.8" />
               <path d="M15,15 Q25,10 22,20 Q18,19 15,15" fill="#587955" stroke="#375235" strokeWidth="0.8" />
@@ -66,28 +66,36 @@ export default function RoyalGate({ onGateOpened }) {
             </svg>
           </div>
 
-          {/* Logo Medallion */}
-          <div className="w-24 h-24 sm:w-32 sm:h-32 -mt-1 hover:scale-105 transition-transform drop-shadow-md cursor-pointer">
+          {/* Prominent Highlighted PS Logo Medallion */}
+          <div className="relative w-32 h-32 sm:w-40 sm:h-40 -mt-1 hover:scale-105 transition-transform cursor-pointer group flex items-center justify-center">
+            {/* Glowing Golden Backlight Ring */}
+            <div className="absolute inset-2 rounded-full bg-gradient-to-r from-[#ffd700]/30 via-[#d4af37]/40 to-[#ffd700]/30 blur-md group-hover:blur-lg transition-all" />
+            
             <img 
               src="/assets/padam/1.png" 
               alt="PS Monogram Medallion" 
-              className="w-full h-full object-contain"
+              className="relative z-10 w-full h-full object-contain filter drop-shadow-[0_8px_16px_rgba(110,30,36,0.35)]"
             />
           </div>
         </div>
 
-        {/* Mysterious Header Text */}
-        <h1 className="font-serif-royal text-base sm:text-lg font-bold tracking-[0.25em] uppercase text-[#7a121c] block mb-1 drop-shadow-xs">
+        {/* Clear & Prominent Royal Header Typography */}
+        <h1 className="font-serif-royal text-lg sm:text-xl font-bold tracking-[0.25em] uppercase text-[#6e1e24] block mb-1 drop-shadow-sm">
           A JOURNEY TO FOREVER
         </h1>
-        <p className="font-serif-royal text-xs sm:text-sm font-semibold text-[#5c131a] tracking-widest uppercase">
-          4–5 DECEMBER 2026 • UDAIPUR
-        </p>
+        
+        <div className="inline-flex items-center justify-center gap-2 bg-[#fffbf4]/80 border border-[#d4af37]/60 rounded-full px-3.5 py-0.5 shadow-xs">
+          <span className="text-[9px] text-[#b8860b]">✦</span>
+          <p className="font-serif-royal text-xs sm:text-sm font-bold text-[#5c131a] tracking-widest uppercase">
+            4–5 DECEMBER 2026 • UDAIPUR
+          </p>
+          <span className="text-[9px] text-[#b8860b]">✦</span>
+        </div>
       </div>
 
-      {/* Realistic 3D Arch Wooden Gate Container */}
+      {/* Realistic 3D Arch Wooden Gate Container - PERFECTLY PROPORTIONED SPACING */}
       <div 
-        className={`relative z-20 w-full max-w-[280px] sm:max-w-[320px] aspect-[4/5] mx-auto my-auto transition-transform duration-[1100ms] cubic-bezier(0.4, 0, 0.2, 1) ${
+        className={`relative z-20 w-full max-w-[285px] sm:max-w-[325px] aspect-[4/5] mx-auto transition-transform duration-[1100ms] cubic-bezier(0.4, 0, 0.2, 1) ${
           isOpening ? 'scale-[3.8] sm:scale-[4.5] translate-y-[5%]' : 'scale-100 translate-y-0'
         }`}
         style={{
