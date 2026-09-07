@@ -143,7 +143,7 @@ export default function App() {
                   "We look forward to celebrating our special moments with you!"
                 </p>
 
-                <div className="mt-5 pt-2 border-t border-[#8c6227]/20 text-center">
+                <div className="mt-8 pt-2 border-t border-[#8c6227]/20 text-center">
                   <p className="font-serif-royal text-[9px] uppercase tracking-[0.16em] text-[#8c6227]/75">
                     Designed by
                   </p>
