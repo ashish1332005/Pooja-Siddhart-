@@ -142,6 +142,15 @@ export default function App() {
                 <p className="font-serif-royal text-xs text-[#5c131a]/80 italic mt-2">
                   "We look forward to celebrating our special moments with you!"
                 </p>
+
+                <div className="mt-2 pt-2 border-t border-[#8c6227]/20 text-center">
+                  <p className="font-serif-royal text-[10px] uppercase tracking-[0.18em] text-[#8c6227]/80">
+                    Designed by
+                  </p>
+                  <p className="font-serif-royal text-xs font-semibold tracking-wide text-[#5c131a]">
+                    Bee Creatives <span className="mx-1 text-[#8c6227]">•</span> 9950501350
+                  </p>
+                </div>
               </motion.div>
             </footer>
 

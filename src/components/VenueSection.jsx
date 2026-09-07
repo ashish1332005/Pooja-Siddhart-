@@ -12,7 +12,7 @@ export default function VenueSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="w-full max-w-[260px] sm:max-w-[320px] -mt-3 sm:-mt-6 mb-8 sm:mb-12"
+        className="w-full max-w-[260px] sm:max-w-[320px] -mt-6 sm:-mt-10 mb-12 sm:mb-16"
       >
         <img
           src="/assets/padam/7.png"

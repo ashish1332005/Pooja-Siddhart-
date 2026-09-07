@@ -9,36 +9,44 @@ export default function WardrobeGuide() {
       title: 'The Sunshine Soirée',
       date: 'FRIDAY 4TH DECEMBER 2026',
       dressCode: 'HALDI COLOUR',
-      image: '/assets/padam/WhatsApp Image 2026-09-05 at 4.02.10 PM.jpeg'
+      image: '/assets/padam/10.png'
     },
     {
       id: 2,
       title: 'Glam, Groove & Gala',
       date: 'FRIDAY 4TH DECEMBER 2026',
       dressCode: 'INDO-WESTERN, PRE-DRAPED SAREES',
-      image: '/assets/padam/WhatsApp Image 2026-09-05 at 4.02.10 PM (1).jpeg'
+      image: '/assets/padam/11.png'
     },
     {
       id: 3,
       title: 'The Wedding Gala',
       date: 'FRIDAY 4TH DECEMBER 2026',
       dressCode: 'COCKTAIL DRESSES & SUMMER SUITS',
-      image: '/assets/padam/WhatsApp Image 2026-09-05 at 4.02.10 PM (2).jpeg'
+      image: '/assets/padam/12.png'
     },
     {
       id: 4,
       title: 'Shubh Vivah',
       date: 'FRIDAY 4TH DECEMBER 2026',
       dressCode: 'PASTEL COLOURS & TRADITIONAL INDIAN',
-      image: '/assets/padam/WhatsApp Image 2026-09-05 at 4.02.10 PM (3).jpeg'
+      image: '/assets/padam/13.png'
     },
     {
       id: 5,
       title: 'Starry Mic Night',
       date: 'THURSDAY 3RD DECEMBER 2026',
       dressCode: 'OF WHITE COLOUR',
-      image: '/assets/padam/WhatsApp Image 2026-09-05 at 4.02.10 PM (4).jpeg'
+      image: '/assets/padam/14.png'
+    },
+    {
+      id: 6,
+      title: 'The Grand Finale',
+      date: 'SATURDAY 5TH DECEMBER 2026',
+      dressCode: 'BLACK TIE, FORMAL ATTIRE',
+      image: '/assets/padam/15.png'
     }
+    
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -155,7 +163,7 @@ export default function WardrobeGuide() {
               style={style}
               className="absolute inset-0 w-full h-full cursor-pointer transition-all duration-700 ease-out flex items-center justify-center"
             >
-              <div className="w-full h-full rounded-sm overflow-hidden bg-white shadow-[0_15px_35px_rgba(0,0,0,0.25)] border border-[#d4af37]/40 p-1.5 sm:p-2 bg-gradient-to-b from-[#ffffff] to-[#faf5ec]">
+              <div className="w-full h-full overflow-hidden">
                 <img 
                   src={card.image} 
                   alt={card.title} 
