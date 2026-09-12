@@ -65,7 +65,7 @@ export default function AnnouncementSection() {
       >
         <img 
           src="/assets/padam/88.png" 
-          alt="We are so happy to announce that Siddhart & Pooja are tying the knot." 
+          alt="We are so happy to announce that Pooja & Siddhart are tying the knot." 
           className="w-full h-auto object-contain filter drop-shadow-sm"
         />
       </motion.div>

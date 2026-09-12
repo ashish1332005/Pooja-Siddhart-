@@ -132,7 +132,7 @@ export default function App() {
                 </div>
                 
                 <h3 className="font-serif-royal text-xl sm:text-2xl font-bold text-[#5c131a]">
-                  Siddhart &amp; Pooja
+                  Pooja &amp; Siddhart
                 </h3>
                 
                 <span className="font-serif-royal text-sm text-[#8c6227] tracking-wider uppercase font-semibold">

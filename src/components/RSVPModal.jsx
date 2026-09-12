@@ -142,7 +142,7 @@ export default function RSVPModal({ isOpen, onClose }) {
             </p>
             <div className="mt-6 pt-4 border-t border-[#d4af37]/30 text-xs font-serif-royal text-[#ebd79a]/80">
               With warm regards,<br/>
-              <span className="font-bold text-[#fff0b3] text-sm">Siddhart &amp; Pooja</span>
+              <span className="font-bold text-[#fff0b3] text-sm">Pooja &amp; Siddhart</span>
             </div>
             <button
               onClick={handleReset}
