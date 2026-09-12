@@ -9,35 +9,35 @@ export default function WardrobeGuide() {
       title: 'Glam, Groove & Gala',
       date: 'FRIDAY 4TH DECEMBER 2026',
       dressCode: 'INDO-WESTERN, PRE-DRAPED SAREES',
-      image: '/assets/padam/11.png'
+      image: '/assets/padam/1 (2).png'
     },
     {
       id: 2,
       title: 'The Wedding Gala',
       date: 'FRIDAY 4TH DECEMBER 2026',
       dressCode: 'COCKTAIL DRESSES & SUMMER SUITS',
-      image: '/assets/padam/12.png'
+      image: '/assets/padam/2 (2).png'
     },
     {
       id: 3,
       title: 'Shubh Vivah',
       date: 'FRIDAY 4TH DECEMBER 2026',
       dressCode: 'PASTEL COLOURS & TRADITIONAL INDIAN',
-      image: '/assets/padam/13.png'
+      image: '/assets/padam/3 (2).png'
     },
     {
       id: 4,
       title: 'Starry Mic Night',
       date: 'THURSDAY 3RD DECEMBER 2026',
       dressCode: 'OF WHITE COLOUR',
-      image: '/assets/padam/14.png'
+      image: '/assets/padam/4 (2).png'
     },
     {
       id: 5,
       title: 'The Grand Finale',
       date: 'SATURDAY 5TH DECEMBER 2026',
       dressCode: 'BLACK TIE, FORMAL ATTIRE',
-      image: '/assets/padam/15.png'
+      image: '/assets/padam/5 (1).png'
     }
   ];
 
