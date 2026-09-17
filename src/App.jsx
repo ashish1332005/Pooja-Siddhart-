@@ -157,14 +157,6 @@ export default function App() {
                   </span>
                 </div>
 
-                <div className="mt-6 pt-2 border-t border-[#8c6227]/20 text-center">
-                  <p className="font-serif-royal text-[9px] uppercase tracking-[0.16em] text-[#8c6227]/75">
-                    Designed by
-                  </p>
-                  <p className="font-serif-royal text-[10px] font-semibold tracking-wide text-[#5c131a]/85">
-                    Bee Creatives <span className="mx-1 text-[#8c6227]">•</span> 9950501350
-                  </p>
-                </div>
               </motion.div>
             </footer>
 
