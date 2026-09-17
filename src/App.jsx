@@ -131,9 +131,13 @@ export default function App() {
                   />
                 </div>
                 
-                <h3 className="font-serif-royal text-xl sm:text-2xl font-bold text-[#5c131a]">
-                  Siddhart &amp; Pooja
-                </h3>
+                <div className="w-full max-w-[260px] sm:max-w-[320px] my-1">
+                  <img 
+                    src="/assets/padam/siddhart-pooja.png" 
+                    alt="Siddhart & Pooja" 
+                    className="w-full h-auto object-contain filter drop-shadow-sm mx-auto"
+                  />
+                </div>
                 
                 <span className="font-serif-royal text-sm text-[#8c6227] tracking-wider uppercase font-semibold">
                   4–5 December 2026 • Udaipur (Raj.)
@@ -143,7 +147,17 @@ export default function App() {
                   "We look forward to celebrating our special moments with you!"
                 </p>
 
-                <div className="mt-8 pt-2 border-t border-[#8c6227]/20 text-center">
+                {/* RSVP Mallani Family */}
+                <div className="mt-4 pt-4 border-t border-[#8c6227]/25 w-full max-w-xs text-center flex flex-col items-center">
+                  <span className="font-serif-royal text-xs uppercase tracking-[0.25em] text-[#8c6227] font-bold">
+                    RSVP
+                  </span>
+                  <span className="font-serif-royal text-lg sm:text-xl font-bold text-[#5c131a] mt-0.5 tracking-wide">
+                    Mallani Family
+                  </span>
+                </div>
+
+                <div className="mt-6 pt-2 border-t border-[#8c6227]/20 text-center">
                   <p className="font-serif-royal text-[9px] uppercase tracking-[0.16em] text-[#8c6227]/75">
                     Designed by
                   </p>
