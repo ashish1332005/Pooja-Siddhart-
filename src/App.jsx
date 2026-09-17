@@ -134,7 +134,7 @@ export default function App() {
                 <div className="w-full max-w-[260px] sm:max-w-[320px] my-1">
                   <img 
                     src="/assets/padam/siddhart-pooja.png" 
-                    alt="Siddhart & Pooja" 
+                    alt="Pooja & Siddhart" 
                     className="w-full h-auto object-contain filter drop-shadow-sm mx-auto"
                   />
                 </div>
