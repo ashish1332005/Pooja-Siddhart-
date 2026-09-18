@@ -55,17 +55,17 @@ export default function AnnouncementSection() {
         />
       </motion.div>
 
-      {/* Announcement Typography Graphic (414961bb-c43a-4b08-bdfd-4a95e2a4a7ba.png) */}
+      {/* Announcement Typography Graphic */}
       <motion.div 
         initial={{ opacity: 0, y: -20, scale: 0.95 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-        className="w-full max-w-[280px] sm:max-w-[360px] mb-3"
+        className="w-full max-w-[290px] sm:max-w-[370px] mb-3"
       >
         <img 
-          src="/assets/padam/414961bb-c43a-4b08-bdfd-4a95e2a4a7ba.png" 
-          alt="We are so happy to announce that Pooja & Siddhrth are tying the knot." 
+          src="/assets/padam/pooja-siddhart-announcement.png" 
+          alt="We are so happy to announce that Pooja & Siddhart are tying the knot." 
           className="w-full h-auto object-contain filter drop-shadow-sm"
         />
       </motion.div>
