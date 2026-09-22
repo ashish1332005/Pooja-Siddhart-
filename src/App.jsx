@@ -33,12 +33,20 @@ export default function App() {
           <motion.section 
             key="hero-gate"
             initial={{ opacity: 1 }}
-            exit={{ opacity: 0, scale: 1.05 }}
-            transition={{ duration: 0.6, ease: "easeInOut" }}
+            exit={{ opacity: 0, scale: 1.04 }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
             id="hero-section" 
-            className="fixed inset-0 z-50 w-full h-screen h-[100dvh] overflow-hidden"
+            className="fixed inset-0 z-50 w-full h-screen flex flex-col items-center justify-between overflow-hidden bg-no-repeat bg-center"
+            style={{
+              backgroundImage: `url('/assets/padam/hero-bg-BoJZa16A.webp')`,
+              backgroundSize: '100% 100%'
+            }}
           >
-            <RoyalGate onGateOpened={handleGateOpened} />
+            <div className="absolute inset-0 bg-[#f6eee2]/10 pointer-events-none" />
+
+            <div className="relative z-10 w-full h-full flex flex-col items-center justify-between pt-0 pb-1 sm:pb-3">
+              <RoyalGate onGateOpened={handleGateOpened} />
+            </div>
           </motion.section>
         ) : (
           /* MAIN INVITATION SITE (Clean in-place reveal without top-to-bottom scroll motion) */
